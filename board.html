@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NERVE Dynamics | Private Lounge Board</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=20260511">
+</head>
+<body style="background: var(--color-white); color: var(--color-black);">
+    <!-- Navbar: Glassmorphic Premium UX -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo" style="letter-spacing: 0.05em; font-weight: 700; cursor: pointer;" onclick="window.location.href='index.html'">NERVE Dynamics</div>
+            <nav class="nav-links">
+                <a href="index.html#home">HOME</a>
+                <a href="index.html#models">MODELS</a>
+                <a href="index.html#tech">TECH</a>
+                <a href="index.html#finance">FINANCE</a>
+                <a href="index.html#test-drive">TEST DRIVE</a>
+                <a href="board.html">BOARD</a>
+            </nav>
+            <div class="nav-actions">
+                <button id="lang-toggle" class="btn-lang">KO</button>
+                <a href="#login" class="btn-login">LOGIN</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Global Notification Toast -->
+    <div id="notification-toast" class="toast hidden">
+        <div class="toast-content">
+            <div class="toast-indicator"></div>
+            <div class="toast-text">새로운 알림이 도착했습니다.</div>
+        </div>
+    </div>
+
+    <!-- Community & Board Section -->
+    <section id="board" class="board-section" style="padding-top: 10rem; min-height: 80vh; background: var(--color-light-grey);">
+        <div class="section-container" style="max-width: 1200px; margin: 0 auto; padding: 0 2rem;">
+            <div class="section-header fade-in text-left">
+                <span class="kicker">THE CLUB</span>
+                <h2>오너들을 위한 프라이빗 라운지</h2>
+                <div class="divider-left"></div>
+            </div>
+
+            <div class="board-wrapper fade-in">
+                <div class="board-controls">
+                    <div class="tag-filters">
+                        <button class="tag-btn active" data-filter="all">전체보기</button>
+                        <button class="tag-btn" data-filter="electric">전기차(EQ)</button>
+                        <button class="tag-btn" data-filter="lifestyle">라이프스타일</button>
+                        <button class="tag-btn" data-filter="service">서비스/관리</button>
+                    </div>
+                    <button class="btn-dark" id="open-write-modal" style="padding: 0.6rem 1.5rem; border-radius: 2px;">글쓰기</button>
+                </div>
+
+                <div class="board-list" id="board-list" style="margin-top: 2rem; min-height: 300px;">
+                    <!-- Skeletons will be overwritten by JS or shown as fallback -->
+                    <div class="post-item loading-skeleton"></div>
+                    <div class="post-item loading-skeleton"></div>
+                </div>
+
+                <!-- Back to Home Button -->
+                <div style="margin-top: 3.5rem; text-align: center; border-top: 1px solid var(--color-border); padding-top: 2.5rem;">
+                    <a href="index.html" class="btn-dark" style="display: inline-flex; align-items: center; justify-content: center; padding: 0.9rem 2.2rem; text-decoration: none; font-size: 0.85rem; font-weight: 600; border-radius: 2px; gap: 0.6rem; letter-spacing: 0.05em; transition: var(--transition-fast);">
+                        <span class="arrow">←</span>
+                        <span>메인 화면으로 돌아가기</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Write Post Modal -->
+    <div id="write-modal" class="custom-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>새 글 작성</h3>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <form id="write-form">
+                    <div class="form-group">
+                        <label>카테고리</label>
+                        <select id="doc-category">
+                            <option value="lifestyle">라이프스타일</option>
+                            <option value="electric">전기차(EQ)</option>
+                            <option value="service" selected>서비스/관리</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>제목</label>
+                        <input type="text" id="doc-title" required placeholder="제목을 입력하세요">
+                    </div>
+                    <div class="form-group">
+                        <label>작성자</label>
+                        <input type="text" id="doc-author" required placeholder="이름 또는 닉네임">
+                    </div>
+                    <div class="form-group">
+                        <label>비밀번호 (게시물 삭제 시 필요)</label>
+                        <input type="password" id="doc-password" required placeholder="비밀번호 4자리 숫자">
+                    </div>
+                    <div class="form-group">
+                        <label>내용</label>
+                        <textarea id="doc-content" rows="6" required placeholder="내용을 입력하세요"></textarea>
+                    </div>
+                    <div class="form-actions" style="margin-top: 2rem; display: flex; justify-content: flex-end; gap: 1rem;">
+                        <button type="button" class="btn-dark close-modal" style="background:#e4e4e7; color:#050505;">취소</button>
+                        <button type="submit" class="btn-dark">등록하기</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer" style="background: var(--color-black); color: var(--color-white); padding: 5rem 2rem 2rem;">
+        <div class="footer-container" style="max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 3rem;">
+            <div class="footer-brand">
+                <h2 style="font-weight: 700; margin-bottom: 1rem;">NERVE Dynamics</h2>
+                <p style="color: #a1a1aa; font-weight: 300;">Advanced Engineering & Mobility.</p>
+            </div>
+            <div class="footer-links">
+                <div class="link-col" style="display: flex; flex-direction: column; gap: 0.8rem;">
+                    <h4 style="font-weight: 500; text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-white);">차량 안내</h4>
+                    <a href="index.html" style="color: #a1a1aa; text-decoration: none; transition: var(--transition-fast);">온라인 카탈로그</a>
+                    <a href="index.html#finance" style="color: #a1a1aa; text-decoration: none; transition: var(--transition-fast);">견적 내기</a>
+                    <a href="index.html#test-drive" style="color: #a1a1aa; text-decoration: none; transition: var(--transition-fast);">시승 신청</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom" style="max-width: 1200px; margin: 4rem auto 0; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.1); text-align: center; color: #71717a; font-size: 0.85rem;">
+            <p>&copy; 2026 NERVE Dynamics. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Firebase Compat SDKs (Optional functionality) -->
+    <script src="https://www.gstatic.com/firebasejs/10.9.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.9.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.9.0/firebase-firestore-compat.js"></script>
+    <!-- Scroll to Top Button -->
+    <div id="scroll-to-top" class="scroll-top-btn">
+        <span>↑</span>
+    </div>
+    <script src="lang.js?v=20260511"></script>
+    <script src="main.js?v=20260511"></script>
+</body>
+</html>
