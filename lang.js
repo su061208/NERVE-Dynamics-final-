@@ -48,6 +48,24 @@ const langDict = {
     "운전자와 심리적, 물리적으로 교감하는 바이오 특화 모델. 시트와 스티어링 센서가 생체 데이터를 실시간 분석하여 스트레스 해소를 위한 조명/향기를 조율하며, 응급 상황 시 자율구조 프로토콜을 가동합니다.": "A bio-specialized model that interacts physically and psychologically with the driver. Sensors analyze biometric data in real-time to adjust lighting and scent, and activate autonomous rescue protocols in emergencies.",
     "G- \"모프(Morph) 클래스\"": "G- \"Morph Class\"",
     "지형과 주행 상황에 맞추어 형태가 능동적으로 진화하는 트랜스포머 SUV. 고속 주행 시 유선형 형태로 차체 패널이 연장되며, 험로에선 액티브 에어로 다이내믹 패널과 결합하여 접지력을 극대화합니다.": "A transformer SUV that actively evolves its shape according to terrain. Body panels extend aerodynamically at high speeds and combine with active panels to maximize traction on rough roads.",
+    "MAYBACH \"크로노스(Chronos) 클래스\"": "MAYBACH \"Chronos Class\"",
+    "탑승자의 '시간적 효율과 완벽한 휴식'을 극대화하는 하이엔드 비즈니스 모델. 예측 자율주행 AI와 양자 컴퓨팅 라우팅 소프트웨어가 도시의 교통 흐름을 5분 앞서 예측하여 정체를 완전히 우회합니다. 차량 내부는 완벽한 무소음·무진동의 초지향성 제어 공간으로 전환되며, 탑승자의 업무 스케줄과 수면 패턴에 맞춰 실시간으로 최적의 차내 환경을 브레인웨이브(뇌파) 동기화 기술로 제어합니다.": "High-end business model that maximizes passenger's 'time efficiency and perfect rest'. Predictive autonomous AI and quantum computing routing software predict city traffic 5 minutes ahead to bypass congestion completely. The interior transforms into a perfect noiseless/vibrationless hyper-directional control space, adjusting in real-time to match work schedules and sleep patterns using brainwave synchronization tech.",
+    "AMG \"에어로(Aero) 클래스\"": "AMG \"Aero Class\"",
+    "지상과 상공의 경계를 허무는 하이브리드 수직이착륙(VTOL) 하이퍼 모빌리티. NERVE OS의 초고속 유체역학 제어 알고리즘이 적용되어, 지상 고속 주행 중 정체가 발생하거나 지형적 한계에 부딪히면 4개의 휠이 독립적인 추진 프로펠러로 가변 분할되며 공중으로 도약합니다. 비행 중 발생하는 모든 난기류를 실시간 로봇 제어로 상쇄하여 지상과 다름없는 안정적인 비행 성능을 제공합니다.": "Hybrid VTOL hyper-mobility blurring the line between ground and sky. Equipped with NERVE OS ultra-high-speed fluid dynamics control algorithm, if congestion or terrain limits occur during ground driving, its 4 wheels transform into independent thrusters to leap into the air. Real-time robotic control offsets all turbulence, providing stable flight performance comparable to the ground.",
+    
+    // Future Class Details
+    "시간 압축형 럭셔리 무빙 라운지": "Time-Compression Luxury Moving Lounge",
+    "메르세데스-마이바흐의 최상위 플래그십에 NERVE Dynamics의 '시공간 동기화 OS(Temporal Sync OS)'를 결합하여, 탑승자에게 완벽하게 독립된 '대체 시간'을 선사하는 초호화 비즈니스 모빌리티입니다.": "An ultra-luxurious business mobility that combines Mercedes-Maybach's top flagship with NERVE Dynamics' 'Temporal Sync OS', providing an entirely independent 'alternative time' for the passenger.",
+    "예측형 인지 라우팅": "Predictive Cognitive Routing",
+    "단순한 내비게이션을 넘어 양자 컴퓨팅 기반의 통계적 흐름 예측 알고리즘이 도시 전체의 교통 인프라 데이터를 실시간 스캐닝합니다. 정체가 시작되기 5분 전 미리 최적의 우회로를 확보하여 도로 위에서 낭비되는 시간을 영(0)으로 수렴시킵니다.": "Beyond simple navigation, quantum computing-based flow prediction algorithms scan city-wide traffic infrastructure data in real-time. It secures the optimal detour 5 minutes before congestion starts, reducing wasted time on the road to zero.",
+    "뇌파 동기화 ANC 캐빈": "Brainwave-Sync ANC Cabin",
+    "차량 내부에 탑승하는 순간, 최고급 시트에 내장된 생체 센서가 탑승자의 뇌파(Alpha, Beta, Theta 파)를 분석합니다. 업무 모드 시 고도의 집중력을 유도하는 지향성 음향과 홀로그램 스크린을 제어하며, 휴식 모드 시 자이로스코프 기반의 '제로-그라비티 능동 감쇄 알고리즘'이 작동하여 노면의 미세 진동과 소음을 100% 차단, 달리는 특급 호텔룸을 구현합니다.": "Upon boarding, biometric sensors in the premium seats analyze the passenger's brainwaves. In work mode, it controls directional sound and hologram screens for high concentration. In rest mode, the gyroscope-based 'Zero-Gravity Active Damping Algorithm' blocks 100% of micro-vibrations and noise, creating a running luxury hotel room.",
+    "초고속 유체역학 하이퍼 모빌리티": "High-Speed Fluid Dynamics Hyper-Mobility",
+    "메르세데스-AMG의 압도적인 트랙 퍼포먼스와 NERVE Dynamics의 '지공(地空) 하이브리드 제어 알고리즘'이 만나 탄생한 미래형 수직이착륙(VTOL) 하이퍼카입니다. 지상 주행의 한계를 완전히 극복하고 공간을 입체적으로 활용합니다.": "A futuristic VTOL hypercar born from the combination of Mercedes-AMG's overwhelming track performance and NERVE Dynamics' 'Ground-Air Hybrid Control Algorithm'. It completely overcomes ground driving limits and utilizes space three-dimensionally.",
+    "가변형 로보틱 액추에이션 (Multi-Modal Transformation)": "Variable Robotic Actuation (Multi-Modal Transformation)",
+    "고속 주행 중 지상 정체 구간을 만나거나 도강이 필요할 때, 주행 모드를 비행 모드로 전환합니다. NERVE OS의 초정밀 제어 아래 4개의 휠이 외부로 전개되며 1,000분의 1초 만에 각각 독립적인 지능형 추진 프로펠러(Thruster)로 변형, 공중으로 도약합니다.": "When facing ground congestion or needing to cross water during high-speed driving, it switches to flight mode. Under NERVE OS precision control, the 4 wheels deploy outward and transform into independent intelligent thrusters in 1/1000th of a second, leaping into the air.",
+    "실시간 난기류 상쇄 소프트웨어 (Active Aero-Stabilizer)": "Real-time Turbulence Offset Software (Active Aero-Stabilizer)",
+    "비행 중 예기치 못한 도심 빌딩 숲의 난기류나 고도 변화를 만났을 때, 기체 표면에 배치된 마이크로 에어로 다이내믹 패널과 제트 분사구를 실시간으로 역방향 제어합니다. 이를 통해 탑승자는 하늘 위를 날고 있음에도 흔들림 없는 안락함과 AMG 특유의 날렵한 조향감을 동시에 경험할 수 있습니다.": "When encountering unexpected turbulence or altitude changes in the urban building forest, micro aerodynamic panels and jet nozzles on the surface are reverse-controlled in real-time. This allows passengers to experience unwavering comfort and AMG's agile steering while flying in the sky.",
     
     // Tech Section
     "압도적인 크기의 고해상도 하이퍼스크린과 지능형 AI가 결합된 MBUX 인포테인먼트. 사용자의 습관을 학습하여 드라이빙의 모든 순간을 직관적이고 완벽하게 제어합니다.": "MBUX infotainment combining a massive high-resolution Hyperscreen and intelligent AI. It learns user habits to perfectly control every driving moment.",
@@ -85,6 +103,8 @@ const langDict = {
     "G-Class (₩ 200,000,000 ~)": "G-Class (₩ 200,000,000 ~)",
     "EQ 바이탈 클래스 (₩ 350,000,000 ~)": "EQ Vital Class (₩ 350,000,000 ~)",
     "G 모프 클래스 (₩ 450,000,000 ~)": "G Morph Class (₩ 450,000,000 ~)",
+    "마이바흐 크로노스 클래스 (₩ 650,000,000 ~)": "Maybach Chronos Class (₩ 650,000,000 ~)",
+    "AMG 에어로 클래스 (₩ 680,000,000 ~)": "AMG Aero Class (₩ 680,000,000 ~)",
     
     // Test Drive
     "시승 신청": "Test Drive Application",
@@ -96,6 +116,8 @@ const langDict = {
     "모델을 선택해주세요": "Please select a model",
     "EQ 바이탈 클래스": "EQ Vital Class",
     "G 모프 클래스": "G Morph Class",
+    "마이바흐 크로노스 클래스": "Maybach Chronos Class",
+    "AMG 에어로 클래스": "AMG Aero Class",
     "희망 시승일": "Preferred Date",
     "시승 신청 완료하기": "Complete Test Drive Application",
     "이미 차량을 출고하신 오너이신가요? 프라이빗 커뮤니티 공간에서 소통해 보세요.": "Are you an owner who has already taken delivery? Communicate in our private community space.",
@@ -136,7 +158,86 @@ const langDict = {
     "차량 안내": "Vehicle Guide",
     "온라인 카탈로그": "Online Catalog",
     "견적 내기": "Get a Quote",
+    // E-Class Details
+    "시간을 앞서가는 지능형 럭셔리 세단": "Intelligent luxury sedan ahead of its time",
+    "새로운 E-Class는 단순한 이동 수단을 넘어, 당신과 완벽하게 교감하는 디지털 파트너입니다. 메르세데스-벤츠 고유의 클래식한 우아함에 시대를 선도하는 최첨단 디지털 혁신을 결합하여, 매 순간 당신에게 꼭 맞춘 특별한 드라이빙 경험을 선사합니다.": "The new E-Class is more than just a means of transportation; it is a digital partner that perfectly interacts with you. Combining Mercedes-Benz's classic elegance with cutting-edge digital innovation, it provides a special driving experience tailored specifically to you at every moment.",
+    "MBUX 슈퍼스크린 & 초개인화 경험": "MBUX Superscreen & Hyper-personalized Experience",
+    "조수석까지 매끄럽게 이어지는 압도적인 크기의 글래스 디스플레이가 미래지향적인 실내를 완성합니다. 인공지능이 운전자의 습관을 스스로 학습하여 자주 쓰는 기능을 자동화하는 '루틴(Routines)' 기능으로 당신만의 E-Class를 완성해 보세요.": "The overwhelmingly large glass display that seamlessly extends to the passenger seat completes a futuristic interior. Create your own E-Class with the 'Routines' feature, where AI learns driver habits and automates frequently used functions.",
+    "시선을 사로잡는 시그니처 디자인": "Eye-catching Signature Design",
+    "우아하게 흐르는 루프 라인과 메르세데스-벤츠의 삼각별을 형상화한 독창적인 리어램프가 결합하여 언제 어디서나 독보적인 존재감을 드러냅니다.": "The elegantly flowing roofline and the unique taillamps embodying the Mercedes-Benz three-pointed star combine to reveal an unrivaled presence anytime, anywhere.",
+    "공감각적 엔터테인먼트 룸": "Synesthetic Entertainment Room",
+    "부메스터® 4D 서라운드 사운드 시스템과 음악의 비트에 맞춰 반응하는 액티브 앰비언트 라이트가 주행의 순간을 하나의 예술 공연으로 탈바꿈시킵니다.": "The Burmester® 4D surround sound system and active ambient lighting that reacts to the beat of the music transform the driving moment into an artistic performance.",
+    "효율과 퍼포먼스의 조화": "Harmony of Efficiency and Performance",
+    "48V 마일드 하이브리드 시스템이 적용되어 한층 부드러운 엔진 시동과 정숙한 주행은 물론, 뛰어난 연료 효율성까지 제공합니다.": "The 48V mild hybrid system provides smoother engine starts and quiet driving, as well as excellent fuel efficiency.",
+
+    // EQS Details
+    "내일을 향한 감각적인 움직임": "Sensuous Movement Towards Tomorrow",
+    "전기차 시대가 나아야 할 럭셔리의 새로운 기준을 제시합니다. 공기역학적 디자인의 정수와 혁신적인 전동화 기술이 만나, 고요하면서도 폭발적인 퍼포먼스를 완성했습니다. 내연기관의 한계를 넘어선 진보된 럭셔리를 직접 경험해 보십시오.": "Presents a new standard of luxury for the electric vehicle era. The essence of aerodynamic design meets innovative electrification technology to complete a quiet yet explosive performance. Experience progressive luxury beyond the limits of internal combustion engines.",
+    "원-보우(One-Bow) 디자인과 공기역학의 정점": "One-Bow Design and the Pinnacle of Aerodynamics",
+    "활을 연상시키는 유려한 곡선의 실루엣은 양산차 최고 수준의 공기저항계수를 달성했습니다. 이는 바람의 저항을 최소화하여 압도적인 1회 충전 주행거리와 경이로운 실내 정숙성을 가능하게 합니다.": "The elegant curved silhouette reminiscent of a bow has achieved the highest level of drag coefficient among mass-produced cars. This minimizes wind resistance, enabling overwhelming single-charge range and phenomenal interior quietness.",
+    "MBUX 하이퍼스크린": "MBUX Hyperscreen",
+    "실내 전체를 가로지르는 거대한 곡선형 패널이 마치 우주선에 탑승한 듯한 감각을 선사합니다. 제로-레이어(Zero-layer) 인터페이스를 통해 복잡한 메뉴 이동 없이 필요한 기능을 직관적으로 제어할 수 있습니다.": "A massive curved panel crossing the entire interior gives the sensation of boarding a spaceship. The zero-layer interface allows intuitive control of necessary functions without complex menu navigation.",
+    "구름 위를 달리는 듯한 승차감": "Ride Comfort Like Driving on Clouds",
+    "지능형 에어매틱(AIRMATIC) 서스펜션이 노면 상황을 즉각적으로 파악하여 최적의 승차감을 유지하며, 리어 액슬 스티어링은 대형 세단임에도 콤팩트카처럼 민첩한 코너링과 주차 편의성을 제공합니다.": "The intelligent AIRMATIC suspension instantly grasps road conditions to maintain optimal ride comfort, and rear-axle steering provides agile cornering and parking convenience like a compact car despite being a large sedan.",
+
+    // S-Class Details
+    "세상을 이끄는 리더를 위한 궁극의 안식처": "Ultimate Sanctuary for Leaders Guiding the World",
+    "S-Class는 단순한 자동차를 넘어선 하나의 상징이자, 성공을 향한 여정에 동행하는 최고의 파트너입니다. 타협하지 않는 장인정신과 최첨단 안전 기술이 빚어낸 독보적인 승차감은 당신에게 완벽한 휴식과 새로운 영감을 제공합니다.": "The S-Class is more than just a car; it's a symbol and the best partner accompanying your journey to success. Unrivaled ride comfort created by uncompromising craftsmanship and cutting-edge safety technology provides you with perfect rest and new inspiration.",
+    "퍼스트 클래스의 여유, 뒷좌석 컴포트": "First-Class Relaxation, Rear Seat Comfort",
+    "이그제큐티브 시트와 쇼퍼 패키지를 통해 뒷좌석 탑승자에게 넓고 안락한 공간을 제공합니다. 섬세한 마사지 기능과 최상급 나파 가죽의 질감이 이동하는 모든 순간을 완벽한 휴식 시간으로 만들어 줍니다.": "Executive seats and the chauffeur package provide a spacious and comfortable space for rear passengers. Delicate massage functions and the texture of top-grade Nappa leather turn every moment of travel into perfect relaxation time.",
+    "오감을 만족시키는 경이로운 정숙성": "Phenomenal Quietness Satisfying the Five Senses",
+    "외부의 소음과 진동을 완벽에 가깝게 차단하는 차체 설계로, 속도를 체감하기 어려울 만큼 고요하고 평온한 실내 환경을 유지합니다.": "With a body design that blocks exterior noise and vibration close to perfection, it maintains a quiet and peaceful interior environment where it's hard to feel the speed.",
+    "타협 없는 혁신적 안전 기술": "Uncompromising Innovative Safety Technology",
+    "찰나의 순간까지 예측하는 드라이빙 어시스턴스 패키지와 100만 개 이상의 픽셀로 야간 시야를 정밀하게 밝히는 디지털 라이트가 당신과 소중한 사람을 가장 안전하게 보호합니다.": "The Driving Assistance Package that predicts even a split second, and Digital Light that precisely illuminates night vision with over 1 million pixels, protect you and your loved ones most safely.",
+
+    // G-Class Details
+    "전설은 길을 가리지 않는다": "Legends Don't Choose Their Path",
+    "수십 년의 시간 동안 변함없이 지켜온 독보적인 아이덴티티. G-Class는 거친 자연과 도심을 아우르며, 어떠한 험로에서도 한계 없는 퍼포먼스를 발휘합니다. 거친 본성과 럭셔리한 실내가 완벽하게 공존하는 유일무이한 오프로더의 감성을 느껴보십시오.": "Unrivaled identity maintained unchanged over decades. The G-Class encompasses rough nature and the city, unleashing limitless performance on any rough road. Feel the sensibility of a unique off-roader where rough nature and a luxurious interior perfectly coexist.",
+    "타협을 모르는 오프로드 DNA": "Uncompromising Off-Road DNA",
+    "3개의 100% 디퍼렌셜 락, 로우 레인지 기어, 그리고 견고한 사다리형 프레임 바디가 결합하여 가파른 경사와 험난한 지형도 거침없이 주파하는 궁극의 오프로드 성능을 자랑합니다.": "Three 100% differential locks, a low-range gear, and a solid ladder-type frame body combine to boast ultimate off-road performance that fearlessly conquers steep slopes and rugged terrain.",
+    "시간을 초월한 아이코닉 디자인": "Timeless Iconic Design",
+    "특유의 각진 실루엣, 외부로 노출된 도어 힌지, 상징적인 스페어타이어 커버 등 G-Class만의 헤리티지 디자인 요소가 현대적인 감각과 만나 강렬한 카리스마를 발산합니다.": "The unique angular silhouette, exposed door hinges, iconic spare tire cover, and other G-Class heritage design elements meet modern sensibility to exude intense charisma.",
+    "반전의 럭셔리 인테리어": "Luxurious Interior with a Twist",
+    "터프한 외관과 상반되는 실내는 최고급 소재와 장인의 수작업으로 완성되었습니다. 최신 MBUX 인포테인먼트 시스템과 와이드 스크린 콕핏이 오프로더 안에서도 최상의 디지털 편의성을 제공합니다.": "The interior, contrasting with the tough exterior, is completed with top-grade materials and artisan handwork. The latest MBUX infotainment system and widescreen cockpit provide the best digital convenience even within an off-roader.",
+
+    // Vital Class Details
+    "교감하는 바이오 에너지 모빌리티": "Interacting Bio-Energy Mobility",
+    "지능형 생체 연결 기술을 탑재한 미래형 바이오 컨셉 세단. 운전자의 미세한 생체 파동과 감정 상태를 분석하여 최상의 치유 환경을 제공하며, 레벨 5 완전 자율주행과 연동되는 혁신적인 무결점 탑승자 안심 설계가 적용되었습니다.": "Futuristic bio-concept sedan equipped with intelligent biometric connection technology. Analyzes the driver's subtle bio-waves and emotional state to provide an optimal healing environment, applying innovative flawless passenger safety design linked with Level 5 fully autonomous driving.",
+    "바이오 피드백 시트 시스템": "Bio-Feedback Seat System",
+    "운전자의 심박수와 호흡, 스트레스 수치를 감지하여 실시간으로 요추 완화 롤러 마사지 및 미세 파동 음악을 매칭 제공합니다.": "Detects the driver's heart rate, breathing, and stress levels to provide real-time matching lumbar relief roller massage and micro-wave music.",
+    "인텔리전트 자율 구조 모드": "Intelligent Autonomous Rescue Mode",
+    "탑승자의 갑작스러운 의료 응급 사태 시, 차량 스스로 비상 구급 신호를 인근 의료 기관으로 송출하고 완전 자율 주행 상태로 직행 응급실로 긴급 이송합니다.": "During sudden medical emergencies, the vehicle automatically sends distress signals to nearby medical facilities and transports the passenger directly to the emergency room in fully autonomous driving mode.",
+
+    // Morph Class Details
+    "지형지물에 능동적으로 반응하는 트랜스포머 SUV": "Transformer SUV Actively Responding to Topography",
+    "어떠한 한계도 모르는 능동형 변형 차체 기술이 탑재된 미래 오프로더의 정점. 주행 노면 상태와 기상 조건에 따라 휠베이스와 차체 스포일러 패널의 두께 및 구조가 실시간으로 변하여 극한의 기동성을 발휘합니다.": "The pinnacle of future off-roaders equipped with active transforming body technology that knows no limits. Wheelbase and body spoiler panel thickness and structure change in real-time according to road surface conditions and weather, exhibiting extreme maneuverability.",
+    "액티브 에어로 다이내믹 패널": "Active Aerodynamic Panel",
+    "고속 도로 진입 시 유선형 형태로 전후면 차체 플랩이 길어지고 넓어져 저항을 최소화하고 주행 효율성을 극대화합니다.": "Upon entering the highway, front and rear body flaps lengthen and widen into a streamlined shape, minimizing resistance and maximizing driving efficiency.",
+    "가변 트랙터 오프로드 모드": "Variable Tractor Off-Road Mode",
+    "극도로 험난한 진흙, 모래, 사막, 바위 구간 진입 시 휠 바디 지지대가 능동적으로 조율되어 최상의 접지 마찰력을 유지합니다.": "When entering extremely rugged mud, sand, desert, or rocky sections, the wheel body supports actively adjust to maintain optimal traction friction.",
+    
+    // Chronos Class Details
+    'MAYBACH "크로노스(Chronos) 클래스"': 'MAYBACH "Chronos Class"',
+    "시간 압축형 럭셔리 무빙 라운지": "Time-compressing Luxury Moving Lounge",
+    "탑승자의 '시간적 효율과 완벽한 휴식'을 극대화하는 하이엔드 비즈니스 모델. 예측 자율주행 AI와 양자 컴퓨팅 라우팅 소프트웨어가 도시의 교통 흐름을 5분 앞서 예측하여 정체를 완전히 우회합니다.": "A high-end business model that maximizes the passenger's 'time efficiency and perfect rest'. Predictive autonomous AI and quantum computing routing software predict city traffic flow 5 minutes ahead to completely bypass congestion.",
+    "탑승자의 '시간적 효율과 완벽한 휴식'을 극대화하는 하이엔드 비즈니스 모델. 예측 자율주행 AI와 양자 컴퓨팅 라우팅 소프트웨어가 도시의 교통 흐름을 5분 앞서 예측하여 정체를 완전히 우회합니다. 차량 내부는 완벽한 무소음·무진동의 초지향성 제어 공간으로 전환되며, 탑승자의 업무 스케줄과 수면 패턴에 맞춰 실시간으로 최적의 차내 환경을 브레인웨이브(뇌파) 동기화 기술로 제어합니다.": "A high-end business model that maximizes the passenger's 'time efficiency and perfect rest'. Predictive autonomous AI and quantum computing routing software predict city traffic flow 5 minutes ahead to completely bypass congestion. The interior transforms into a perfectly silent, vibration-free, highly directional controlled space, and real-time optimal in-car environment is controlled by brainwave synchronization technology according to the passenger's work schedule and sleep pattern.",
+    "예측형 인지 라우팅": "Predictive Cognitive Routing",
+    "단순한 내비게이션을 넘어 양자 컴퓨팅 기반의 통계적 흐름 예측 알고리즘이 도시 전체의 교통 인프라 데이터를 실시간 스캐닝합니다. 정체가 시작되기 5분 전 미리 최적의 우회로를 확보하여 도로 위에서 낭비되는 시간을 영(0)으로 수렴시킵니다.": "Beyond simple navigation, quantum computing-based statistical flow prediction algorithms scan city-wide traffic infrastructure data in real-time. It secures the optimal detour 5 minutes before congestion begins, converging time wasted on the road to zero.",
+    "뇌파 동기화 ANC 캐빈": "Brainwave Synchronization ANC Cabin",
+    "차량 내부에 탑승하는 순간, 최고급 시트에 내장된 생체 센서가 탑승자의 뇌파(Alpha, Beta, Theta 파)를 분석합니다. 업무 모드 시 고도의 집중력을 유도하는 지향성 음향과 홀로그램 스크린을 제어하며, 휴식 모드 시 자이로스코프 기반의 '제로-그라비티 능동 감쇄 알고리즘'이 작동하여 노면의 미세 진동과 소음을 100% 차단, 달리는 특급 호텔룸을 구현합니다.": "The moment you board, bio-sensors embedded in the premium seats analyze the passenger's brainwaves (Alpha, Beta, Theta). In work mode, it controls directional sound and hologram screens to induce high concentration, and in rest mode, gyroscope-based 'zero-gravity active damping algorithm' perfectly blocks micro-vibrations and noise from the road, realizing a moving luxury hotel room.",
+
+    // Aero Class Details
+    'AMG "에어로(Aero) 클래스"': 'AMG "Aero Class"',
+    "초고속 유체역학 하이퍼 모빌리티": "Ultra-high-speed Fluid Dynamics Hyper Mobility",
+    "지상과 상공의 경계를 허무는 하이브리드 수직이착륙(VTOL) 하이퍼 모빌리티. 주행 중 지형적 한계나 정체가 발생하면 4개의 휠이 독립적인 추진 프로펠러로 변형되어 공중으로 도약합니다.": "Hybrid Vertical Take-Off and Landing (VTOL) hyper mobility that blurs the boundary between ground and sky. When encountering topographical limits or congestion during driving, the 4 wheels transform into independent propulsion propellers and leap into the air.",
+    "지상과 상공의 경계를 허무는 하이브리드 수직이착륙(VTOL) 하이퍼 모빌리티. NERVE OS의 초고속 유체역학 제어 알고리즘이 적용되어, 지상 고속 주행 중 정체가 발생하거나 지형적 한계에 부딪히면 4개의 휠이 독립적인 추진 프로펠러로 가변 분할되며 공중으로 도약합니다. 비행 중 발생하는 모든 난기류를 실시간 로봇 제어로 상쇄하여 지상과 다름없는 안정적인 비행 성능을 제공합니다.": "Hybrid Vertical Take-Off and Landing (VTOL) hyper mobility that blurs the boundary between ground and sky. NERVE OS's ultra-high-speed fluid dynamics control algorithm is applied, and if congestion occurs or topographical limits are reached during high-speed ground driving, the 4 wheels variably split into independent propulsion propellers and leap into the air. It provides stable flight performance just like on the ground by offsetting all turbulence generated during flight with real-time robotic control.",
+    "가변형 로보틱 액추에이션 (Multi-Modal Transformation)": "Variable Robotic Actuation (Multi-Modal Transformation)",
+    "고속 주행 중 지상 정체 구간을 만나거나 도강이 필요할 때, 주행 모드를 비행 모드로 전환합니다. NERVE OS의 초정밀 제어 아래 4개의 휠이 외부로 전개되며 1,000분의 1초 만에 각각 독립적인 지능형 추진 프로펠러(Thruster)로 변형, 공중으로 도약합니다.": "When encountering ground congestion during high-speed driving or when river crossing is necessary, the driving mode switches to flight mode. Under the ultra-precise control of NERVE OS, the 4 wheels deploy outward and transform into independent intelligent propulsion propellers (Thrusters) in 1/1,000 of a second, leaping into the air.",
+    "실시간 난기류 상쇄 소프트웨어 (Active Aero-Stabilizer)": "Real-time Turbulence Offset Software (Active Aero-Stabilizer)",
+    "비행 중 예기치 못한 도심 빌딩 숲의 난기류나 고도 변화를 만났을 때, 기체 표면에 배치된 마이크로 에어로 다이내믹 패널과 제트 분사구를 실시간으로 역방향 제어합니다. 이를 통해 탑승자는 하늘 위를 날고 있음에도 흔들림 없는 안락함과 AMG 특유의 날렵한 조향감을 동시에 경험할 수 있습니다.": "When encountering unexpected turbulence from urban building forests or altitude changes during flight, the micro aerodynamic panels and jet nozzles placed on the body surface are controlled in real-time in reverse direction. Through this, passengers can simultaneously experience unwavering comfort and AMG's signature agile steering feel even while flying in the sky."
 };
+
+window.langDict = langDict;
 
 window.applyTranslation = function(lang) {
     const walk = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, null, false);

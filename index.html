@@ -282,16 +282,12 @@
                         </div>
                     </div>
                     <!-- Text + Buttons: padded -->
-                    <div style="padding: 2rem; text-align: center; word-break: keep-all;">
+                    <div style="padding: 2rem; text-align: left; word-break: keep-all;">
                         <h3 class="text-white" style="font-size: 1.8rem; margin-bottom: 1rem;">EQ "바이탈(Vital) 클래스"</h3>
                         <p style="color: #94a3b8; line-height: 1.6; margin-bottom: 2rem;">운전자와 심리적, 물리적으로 교감하는 바이오 특화 모델. 시트와 스티어링 센서가 생체 데이터를 실시간 분석하여 스트레스 해소를 위한 조명/향기를 조율하며, 응급 상황 시 자율구조 프로토콜을 가동합니다.</p>
-                        <div style="display: flex; gap: 1rem; justify-content: center;">
-                            <div class="card-action btn-solid-white" style="padding: 0.8rem 2rem; border-radius: 4px; color: #000; cursor: pointer;">
-                                <span class="view-btn">자세히 보기</span>
-                            </div>
-                            <div class="btn-primary-outline" style="padding: 0.8rem 2rem; border: 1px solid #60a5fa; color: #60a5fa; border-radius: 4px; cursor: pointer;" onclick="document.getElementById('test-drive').scrollIntoView({behavior: 'smooth'})">
-                                <span>사전 예약하기</span>
-                            </div>
+                        <div class="card-action" style="color: #fff;">
+                            <span class="view-btn">자세히 보기</span>
+                            <span class="arrow">→</span>
                         </div>
                     </div>
                 </div>
@@ -304,19 +300,63 @@
                         </div>
                     </div>
                     <!-- Text + Buttons: padded -->
-                    <div style="padding: 2rem; text-align: center; word-break: keep-all;">
+                    <div style="padding: 2rem; text-align: left; word-break: keep-all;">
                         <h3 class="text-white" style="font-size: 1.8rem; margin-bottom: 1rem;">G- "모프(Morph) 클래스"</h3>
                         <p style="color: #94a3b8; line-height: 1.6; margin-bottom: 2rem;">지형과 주행 상황에 맞추어 형태가 능동적으로 진화하는 트랜스포머 SUV. 고속 주행 시 유선형 형태로 차체 패널이 연장되며, 험로에선 액티브 에어로 다이내믹 패널과 결합하여 접지력을 극대화합니다.</p>
-                        <div style="display: flex; gap: 1rem; justify-content: center;">
-                            <div class="card-action btn-solid-white" style="padding: 0.8rem 2rem; border-radius: 4px; color: #000; cursor: pointer;">
-                                <span class="view-btn">자세히 보기</span>
-                            </div>
-                            <div class="btn-primary-outline" style="padding: 0.8rem 2rem; border: 1px solid #60a5fa; color: #60a5fa; border-radius: 4px; cursor: pointer;" onclick="document.getElementById('test-drive').scrollIntoView({behavior: 'smooth'})">
-                                <span>사전 예약하기</span>
-                            </div>
+                        <div class="card-action" style="color: #fff;">
+                            <span class="view-btn">자세히 보기</span>
+                            <span class="arrow">→</span>
                         </div>
                     </div>
                 </div>
+            </div>
+
+            <!-- 2. Future Class / Anti-Gravity Class -->
+            <div style="margin: 4rem 0;"></div>
+            
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; width: 100%; box-sizing: border-box;">
+                <!-- Chronos Class -->
+                <div class="model-card fade-in-up" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; overflow: hidden; min-width: 0; transition: transform 0.3s ease, box-shadow 0.3s ease;" onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 20px 40px rgba(0,0,0,0.5), 0 0 30px rgba(167, 139, 250, 0.1)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';">
+                    <!-- Image -->
+                    <div style="padding: 2rem 2rem 0 2rem; display: flex; justify-content: center;">
+                        <div style="width: 100%; aspect-ratio: 16/9; overflow: hidden; border-radius: 6px;">
+                            <img src="chronos_class.png" alt="시간을 통제하는 마이바흐 크로노스 클래스" style="display: block; margin: 0 auto; width: 100%; height: 100%; object-fit: cover; object-position: center; transition: transform 0.5s ease;">
+                        </div>
+                    </div>
+                    <!-- Text + Buttons -->
+                    <div style="padding: 2rem; text-align: left; word-break: keep-all;">
+                        <h3 class="text-white" style="font-size: 1.8rem; margin-bottom: 1rem;">MAYBACH "크로노스(Chronos) 클래스"</h3>
+                        <p style="color: #94a3b8; line-height: 1.6; margin-bottom: 2rem;">탑승자의 '시간적 효율과 완벽한 휴식'을 극대화하는 하이엔드 비즈니스 모델. 예측 자율주행 AI와 양자 컴퓨팅 라우팅 소프트웨어가 도시의 교통 흐름을 5분 앞서 예측하여 정체를 완전히 우회합니다.</p>
+                        <div class="card-action" style="color: #fff;">
+                            <span class="view-btn">자세히 보기</span>
+                            <span class="arrow">→</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Aero Class -->
+                <div class="model-card fade-in-up" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; overflow: hidden; min-width: 0; transition: transform 0.3s ease, box-shadow 0.3s ease; transition-delay: 0.2s;" onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 20px 40px rgba(0,0,0,0.5), 0 0 30px rgba(167, 139, 250, 0.1)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';">
+                    <!-- Image -->
+                    <div style="padding: 2rem 2rem 0 2rem; display: flex; justify-content: center;">
+                        <div style="width: 100%; aspect-ratio: 16/9; overflow: hidden; border-radius: 6px;">
+                            <img src="aero_class.png" alt="VTOL 비행이 가능한 AMG 에어로 클래스" style="display: block; margin: 0 auto; width: 100%; height: 100%; object-fit: cover; object-position: center; transition: transform 0.5s ease;">
+                        </div>
+                    </div>
+                    <!-- Text + Buttons -->
+                    <div style="padding: 2rem; text-align: left; word-break: keep-all;">
+                        <h3 class="text-white" style="font-size: 1.8rem; margin-bottom: 1rem;">AMG "에어로(Aero) 클래스"</h3>
+                        <p style="color: #94a3b8; line-height: 1.6; margin-bottom: 2rem;">지상과 상공의 경계를 허무는 하이브리드 수직이착륙(VTOL) 하이퍼 모빌리티. 주행 중 지형적 한계나 정체가 발생하면 4개의 휠이 독립적인 추진 프로펠러로 변형되어 공중으로 도약합니다.</p>
+                        <div class="card-action" style="color: #fff;">
+                            <span class="view-btn">자세히 보기</span>
+                            <span class="arrow">→</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- scroll to top subtle arrow -->
+            <div style="text-align: right; margin-top: 4rem;">
+                <span style="color: rgba(255,255,255,0.5); font-size: 1.5rem; cursor: pointer;" tabindex="0" role="button" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" onkeydown="if(event.key === 'Enter' || event.key === ' ') { event.preventDefault(); window.scrollTo({top: 0, behavior: 'smooth'}); }">↑</span>
             </div>
         </div>
     </section>
@@ -493,6 +533,8 @@
                             <option value="200000000">G-Class (₩ 200,000,000 ~)</option>
                             <option value="350000000">EQ 바이탈 클래스 (₩ 350,000,000 ~)</option>
                             <option value="450000000">G 모프 클래스 (₩ 450,000,000 ~)</option>
+                            <option value="650000000">마이바흐 크로노스 클래스 (₩ 650,000,000 ~)</option>
+                            <option value="680000000">AMG 에어로 클래스 (₩ 680,000,000 ~)</option>
                         </select>
                     </div>
                     <div class="form-row">
@@ -543,6 +585,8 @@
                         <option value="G-Class">G-Class</option>
                         <option value="Vital-Class">EQ 바이탈 클래스</option>
                         <option value="Morph-Class">G 모프 클래스</option>
+                        <option value="Chronos-Class">마이바흐 크로노스 클래스</option>
+                        <option value="Aero-Class">AMG 에어로 클래스</option>
                     </select>
                 </div>
                 <div class="form-group">
@@ -611,7 +655,7 @@
     <script src="lang.js?v=20260511"></script>
     <script src="main.js?v=20260511"></script>
         <!-- Scroll to Top Button -->
-    <div id="scroll-to-top" class="scroll-top-btn">
+    <div id="scroll-to-top" class="scroll-top-btn" tabindex="0" role="button" aria-label="맨 위로 가기">
         <span>↑</span>
     </div>
 

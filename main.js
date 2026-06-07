@@ -158,7 +158,9 @@ document.addEventListener('DOMContentLoaded', () => {
             btn.addEventListener('click', async (e) => {
                 e.stopPropagation();
                 const docId = e.target.getAttribute('data-id');
-                const password = prompt("게시글을 삭제하시려면 작성 시 입력한 비밀번호를 입력해주세요:");
+                const currentLang = localStorage.getItem('site_lang') || 'KO';
+                const promptMsg = currentLang === 'EN' ? "Please enter the password used when creating the post to delete it:" : "게시글을 삭제하시려면 작성 시 입력한 비밀번호를 입력해주세요:";
+                const password = prompt(promptMsg);
                 
                 if (password === null || password === "") return;
                 
@@ -168,20 +170,21 @@ document.addEventListener('DOMContentLoaded', () => {
                     if (docSnap.exists) {
                         const docData = docSnap.data();
                         if (docData.password === password) {
-                            if(confirm("정말로 삭제하시겠습니까? 삭제된 데이터는 복구할 수 없습니다.")) {
+                            const confirmMsg = currentLang === 'EN' ? "Are you sure you want to delete? Deleted data cannot be recovered." : "정말로 삭제하시겠습니까? 삭제된 데이터는 복구할 수 없습니다.";
+                            if(confirm(confirmMsg)) {
                                 await docRef.delete();
                                 showNotification("게시글이 안전하게 삭제되었습니다.");
                                 loadPosts();
                             }
                         } else {
-                            alert("비밀번호가 일치하지 않습니다.");
+                            alert(currentLang === 'EN' ? "Passwords do not match." : "비밀번호가 일치하지 않습니다.");
                         }
                     } else {
-                        alert("이미 삭제되었거나 존재하지 않는 게시물입니다.");
+                        alert(currentLang === 'EN' ? "The post has already been deleted or does not exist." : "이미 삭제되었거나 존재하지 않는 게시물입니다.");
                     }
                 } catch(err) {
                     console.error("Error deleting document: ", err);
-                    alert("게시물 삭제 과정에서 오류가 발생했습니다.");
+                    alert(currentLang === 'EN' ? "An error occurred during post deletion." : "게시물 삭제 과정에서 오류가 발생했습니다.");
                 }
             });
         });
@@ -218,7 +221,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 const submitBtn = writeForm.querySelector('button[type="submit"]');
                 const origText = submitBtn.innerText;
-                submitBtn.innerText = "안전하게 암호화 중...";
+                const currentLang = localStorage.getItem('site_lang') || 'KO';
+                submitBtn.innerText = currentLang === 'EN' ? "Encrypting Securely..." : "안전하게 암호화 중...";
                 submitBtn.disabled = true;
                 
                 try {
@@ -372,7 +376,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const btn = testDriveForm.querySelector('button[type="submit"]');
             const origText = btn.innerText;
-            btn.innerText = "신청 처리 중...";
+            const currentLang = localStorage.getItem('site_lang') || 'KO';
+            btn.innerText = currentLang === 'EN' ? "Processing Application..." : "신청 처리 중...";
             btn.disabled = true;
 
             setTimeout(() => {
@@ -442,6 +447,22 @@ document.addEventListener('DOMContentLoaded', () => {
                 { title: "액티브 에어로 다이내믹 패널", text: "고속 도로 진입 시 유선형 형태로 전후면 차체 플랩이 길어지고 넓어져 저항을 최소화하고 주행 효율성을 극대화합니다." },
                 { title: "가변 트랙터 오프로드 모드", text: "극도로 험난한 진흙, 모래, 사막, 바위 구간 진입 시 휠 바디 지지대가 능동적으로 조율되어 최상의 접지 마찰력을 유지합니다." }
             ]
+        },
+        'MAYBACH "크로노스(Chronos) 클래스"': {
+            subtitle: "시간 압축형 럭셔리 무빙 라운지",
+            desc: "탑승자의 '시간적 효율과 완벽한 휴식'을 극대화하는 하이엔드 비즈니스 모델. 예측 자율주행 AI와 양자 컴퓨팅 라우팅 소프트웨어가 도시의 교통 흐름을 5분 앞서 예측하여 정체를 완전히 우회합니다. 차량 내부는 완벽한 무소음·무진동의 초지향성 제어 공간으로 전환되며, 탑승자의 업무 스케줄과 수면 패턴에 맞춰 실시간으로 최적의 차내 환경을 브레인웨이브(뇌파) 동기화 기술로 제어합니다.",
+            features: [
+                { title: "예측형 인지 라우팅", text: "단순한 내비게이션을 넘어 양자 컴퓨팅 기반의 통계적 흐름 예측 알고리즘이 도시 전체의 교통 인프라 데이터를 실시간 스캐닝합니다. 정체가 시작되기 5분 전 미리 최적의 우회로를 확보하여 도로 위에서 낭비되는 시간을 영(0)으로 수렴시킵니다." },
+                { title: "뇌파 동기화 ANC 캐빈", text: "차량 내부에 탑승하는 순간, 최고급 시트에 내장된 생체 센서가 탑승자의 뇌파(Alpha, Beta, Theta 파)를 분석합니다. 업무 모드 시 고도의 집중력을 유도하는 지향성 음향과 홀로그램 스크린을 제어하며, 휴식 모드 시 자이로스코프 기반의 '제로-그라비티 능동 감쇄 알고리즘'이 작동하여 노면의 미세 진동과 소음을 100% 차단, 달리는 특급 호텔룸을 구현합니다." }
+            ]
+        },
+        'AMG "에어로(Aero) 클래스"': {
+            subtitle: "초고속 유체역학 하이퍼 모빌리티",
+            desc: "지상과 상공의 경계를 허무는 하이브리드 수직이착륙(VTOL) 하이퍼 모빌리티. NERVE OS의 초고속 유체역학 제어 알고리즘이 적용되어, 지상 고속 주행 중 정체가 발생하거나 지형적 한계에 부딪히면 4개의 휠이 독립적인 추진 프로펠러로 가변 분할되며 공중으로 도약합니다. 비행 중 발생하는 모든 난기류를 실시간 로봇 제어로 상쇄하여 지상과 다름없는 안정적인 비행 성능을 제공합니다.",
+            features: [
+                { title: "가변형 로보틱 액추에이션 (Multi-Modal Transformation)", text: "고속 주행 중 지상 정체 구간을 만나거나 도강이 필요할 때, 주행 모드를 비행 모드로 전환합니다. NERVE OS의 초정밀 제어 아래 4개의 휠이 외부로 전개되며 1,000분의 1초 만에 각각 독립적인 지능형 추진 프로펠러(Thruster)로 변형, 공중으로 도약합니다." },
+                { title: "실시간 난기류 상쇄 소프트웨어 (Active Aero-Stabilizer)", text: "비행 중 예기치 못한 도심 빌딩 숲의 난기류나 고도 변화를 만났을 때, 기체 표면에 배치된 마이크로 에어로 다이내믹 패널과 제트 분사구를 실시간으로 역방향 제어합니다. 이를 통해 탑승자는 하늘 위를 날고 있음에도 흔들림 없는 안락함과 AMG 특유의 날렵한 조향감을 동시에 경험할 수 있습니다." }
+            ]
         }
     };
 
@@ -450,10 +471,31 @@ document.addEventListener('DOMContentLoaded', () => {
     
     if (detailModal) {
         document.querySelectorAll('.model-card').forEach(card => {
+            card.setAttribute('tabindex', '0');
+            card.setAttribute('role', 'button');
+            card.addEventListener('keydown', (e) => {
+                if(e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    card.click();
+                }
+            });
             card.addEventListener('click', (e) => {
+                // 사전 예약하기 버튼을 클릭한 경우 모달을 띄우지 않음
+                if (e.target.closest('.btn-primary-outline')) {
+                    return;
+                }
+                
                 const h3 = card.querySelector('h3');
                 if (!h3) return;
-                const modelName = h3.innerText.trim();
+                
+                let modelName = h3.innerText.trim();
+                h3.childNodes.forEach(child => {
+                    if (child.nodeType === Node.TEXT_NODE && child._ko) {
+                        const txt = child._ko.trim();
+                        if (txt) modelName = txt;
+                    }
+                });
+                
                 const data = modelDetails[modelName];
                 
                 if (data) {
@@ -479,6 +521,8 @@ document.addEventListener('DOMContentLoaded', () => {
                         let valToSelect = modelName;
                         if (modelName.includes("바이탈")) valToSelect = "Vital-Class";
                         if (modelName.includes("모프")) valToSelect = "Morph-Class";
+                        if (modelName.includes("크로노스")) valToSelect = "Chronos-Class";
+                        if (modelName.includes("에어로")) valToSelect = "Aero-Class";
                         Array.from(tdModel.options).forEach(opt => {
                             if(opt.value === valToSelect) opt.selected = true;
                         });
@@ -486,8 +530,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             });
         });
-        
+
         closeDetailBtns.forEach(btn => {
+            btn.setAttribute('tabindex', '0');
+            btn.setAttribute('role', 'button');
+            btn.addEventListener('keydown', (e) => {
+                if(e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    btn.click();
+                }
+            });
             btn.addEventListener('click', () => {
                 detailModal.classList.remove('active');
                 detailModal.style.display = 'none';
@@ -507,7 +559,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function showNotification(message) {
         if(!toast || !toastText) return;
-        toastText.innerText = message;
+        const currentLang = localStorage.getItem('site_lang') || 'KO';
+        let translatedMessage = message;
+        if (currentLang === 'EN' && window.langDict) {
+            if (window.langDict[message]) {
+                translatedMessage = window.langDict[message];
+            } else if (message.includes('님, 프라이빗 라운지에 오신 것을 환영합니다.')) {
+                const name = message.split('님')[0];
+                translatedMessage = `Welcome to the Private Lounge, ${name}.`;
+            }
+        }
+        toastText.innerText = translatedMessage;
         toast.classList.add('show');
         
         clearTimeout(toastTimeout);
@@ -532,6 +594,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 top: 0,
                 behavior: 'smooth'
             });
+        });
+        
+        scrollTopBtn.addEventListener('keydown', (e) => {
+            if(e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                scrollTopBtn.click();
+            }
         });
     }
 
